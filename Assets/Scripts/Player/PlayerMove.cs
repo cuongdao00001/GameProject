@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerMove : MonoBehaviour
 {
     [Header ("Movement Parameters")]
@@ -33,8 +34,11 @@ public class PlayerMove : MonoBehaviour
     private BoxCollider2D boxCollider;
     private float wallJumpCoolDown;
     private float horizontalInput;
+    public InteractionSystem interactionSystem;
+    public bool isRunning;
 
-    
+
+
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
@@ -42,6 +46,8 @@ public class PlayerMove : MonoBehaviour
         boxCollider = GetComponent<BoxCollider2D>();
 
         jumpCounter = extraJumps;
+
+        interactionSystem = FindObjectOfType<InteractionSystem>();
     }
 
     // Update is called once per frame
@@ -50,6 +56,10 @@ public class PlayerMove : MonoBehaviour
         // Run without attack
         if (!movementEnabled)
             return;
+        // Stop when examine
+        if (!CanMove())
+            return;
+
 
         horizontalInput = Input.GetAxis("Horizontal");
 
@@ -91,6 +101,7 @@ public class PlayerMove : MonoBehaviour
                 coyoteCounter = Time.deltaTime; // Start decreasing coyote counter when not on the ground
             }
         }
+        isRunning = Mathf.Abs(horizontalInput) > 0.01f;
     }
     private void Jump()
     {
@@ -153,5 +164,10 @@ public class PlayerMove : MonoBehaviour
     public void EnableMovement()
     {
         movementEnabled = true;
+    }
+
+    public bool CanMove()
+    {
+        return !interactionSystem.isExamining;
     }
 }

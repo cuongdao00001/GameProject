@@ -24,8 +24,8 @@ public class Menemy : MonoBehaviour
     // References
     private Animator aim;
     private Health playerHealth;
-
     private EnemyPatrol enemyPatrol;
+
     void Start()
     {
         aim = GetComponent<Animator>();
@@ -37,19 +37,20 @@ public class Menemy : MonoBehaviour
     {
         cooldownTimer += Time.deltaTime;
 
-        // Attack only when player in sight
-        if (PlayerInSight())
-        {           
-            if (cooldownTimer >= attackCooldown && playerHealth.currentHealth > 0)
-            {
-                cooldownTimer = 0;
-                aim.SetTrigger("Eattack");
-                SoundManager.instance.Playsound(attackSound);
-            }
-        }    
+        if (CanAttackPlayer())
+        {
+            cooldownTimer = 0;
+            aim.SetTrigger("Eattack");
+            SoundManager.instance.Playsound(attackSound);
+        }
 
-        if (enemyPatrol != null)       
-            enemyPatrol.enabled = !PlayerInSight();        
+        if (enemyPatrol != null)
+            enemyPatrol.enabled = !PlayerInSight();
+    }
+
+    private bool CanAttackPlayer()
+    {
+        return cooldownTimer >= attackCooldown && playerHealth.currentHealth > 0 && PlayerInSight();
     }
     private bool PlayerInSight()
     {

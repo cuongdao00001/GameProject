@@ -67,8 +67,10 @@
     <Compile Include="Assets\Scripts\Ui\SelectionArrow.cs" />
     <Compile Include="Assets\Scripts\Camera\SoundManager.cs" />
     <Compile Include="Assets\Sprites\Cainos\Third Party\Lucid Editor\Runtime\Attributes\GUIColorAttribute.cs" />
+    <Compile Include="Assets\Scripts\Ui\InventorySystem.cs" />
     <Compile Include="Assets\Sprites\Cainos\Pixel Art Platformer - Village Props\Script\Elevator.cs" />
     <Compile Include="Assets\Sprites\Cainos\Third Party\Lucid Editor\Runtime\PropertyGroupAttribute.cs" />
+    <Compile Include="Assets\Scripts\Items\Item.cs" />
     <Compile Include="Assets\Sprites\Cainos\Third Party\Lucid Editor\Runtime\Enum.cs" />
     <Compile Include="Assets\NoobGameDev\Health System For Dummies\System\UnityEvents\OnCurrentHealthChanged\CurrentHealth.cs" />
     <Compile Include="Assets\NoobGameDev\Health System For Dummies\System\Bar\FollowCameraRotation.cs" />
@@ -136,6 +138,7 @@
     <Compile Include="Assets\Scripts\Health\Healthcollectible.cs" />
     <Compile Include="Assets\NoobGameDev\Health System For Dummies\System\Bar\HealthBar.cs" />
     <Compile Include="Assets\Sprites\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HorizontalLineAttribute.cs" />
+    <Compile Include="Assets\Scripts\Player\InteractionSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Knight Files\Read Me.txt" />

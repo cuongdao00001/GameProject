@@ -42,17 +42,20 @@ public class RangedEnemy : MonoBehaviour
         cooldownTimer += Time.deltaTime;
 
         // Attack only when player in sight
-        if (PlayerInSight())
+        if (CanAttackPlayer())
         {
-            if (cooldownTimer >= attackCooldown && playerHealth.currentHealth > 0)
-            {
-                cooldownTimer = 0;
-                aim.SetTrigger("Ecast");
-            }
+            cooldownTimer = 0;
+            aim.SetTrigger("Ecast");
+            RangedAttack();
         }
 
         if (enemyPatrol != null)
             enemyPatrol.enabled = !PlayerInSight();
+    }
+
+    private bool CanAttackPlayer()
+    {
+        return cooldownTimer >= attackCooldown && playerHealth.currentHealth > 0 && PlayerInSight();
     }
 
     private void RangedAttack()
@@ -85,4 +88,5 @@ public class RangedEnemy : MonoBehaviour
         Gizmos.DrawWireCube(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
             new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z));
     }
+
 }

@@ -6,9 +6,23 @@ using UnityEngine.UI;
 
 public class InventorySystem : MonoBehaviour
 {
+    [System.Serializable]
+    // Inventory item class
+    public class InventoryItem
+    {
+        public GameObject obj;
+        public int stack = 1;
+
+        public InventoryItem(GameObject o, int s = 1)
+        {
+            obj = o;
+            stack = s;
+        }
+    }
+
     [Header("General Fields")]
     // List of items picked up
-    public List<GameObject> items = new List<GameObject>();
+    public List<InventoryItem> items = new List<InventoryItem>();
     // Flag indicates if the inventory open or not
     public bool isOpen;
 
@@ -56,9 +70,43 @@ public class InventorySystem : MonoBehaviour
     // Add the item to the item list
     public void Pickup(GameObject _item)
     {
-        items.Add(_item);
+        // If item is stackable
+        if (_item.GetComponent<Item>().stackable)
+        {
+            // Check if we have an exitsting item in our inventory
+            InventoryItem existingItem = items.Find(x => x.obj.name == _item.name);
+            // If yes stack it
+            if (existingItem != null)
+            {
+                existingItem.stack++;
+            }
+            // If no add it as a new item
+            else
+            {
+                InventoryItem i = new InventoryItem(_item);
+                items.Add(i);
+            }
+        }
+        // If item isn't stackable
+        else
+        {
+            InventoryItem i = new InventoryItem(_item);
+            items.Add(i);
+        }
         Update_UI();
         
+    }
+
+    public bool CanPickUp()
+    {
+        if (items.Count >= items_Images.Length)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 
     // Refresh the UI elements in the inventory window
@@ -69,7 +117,7 @@ public class InventorySystem : MonoBehaviour
         // Show it in the respective slot in the items image
         for (int i = 0; i < items.Count; i++)
         {
-            items_Images[i].sprite = items[i].GetComponent<SpriteRenderer>().sprite;
+            items_Images[i].sprite = items[i].obj.GetComponent<SpriteRenderer>().sprite;
             items_Images[i].gameObject.SetActive(true);
         }
     }
@@ -89,9 +137,15 @@ public class InventorySystem : MonoBehaviour
         // Set the image
         description_Image.sprite = items_Images[_id].sprite;
         // Set the title
-        description_Title.text = items[_id].name;
+        if (items[_id].stack == 1)
+            // If stack == 1 write only name
+            description_Title.text = items[_id].obj.name;
+
+        else
+            // If stack > 1 write name + x stackvalue
+            description_Title.text = items[_id].obj.name + " x" + items[_id].stack;
         // Show the description
-        description_Description.text = items[_id].GetComponent<Item>().descriptionText;
+        description_Description.text = items[_id].obj.GetComponent<Item>().descriptionText;
         // Set the window
         description_Image.gameObject.SetActive(true);
         description_Title.gameObject.SetActive(true);
@@ -107,15 +161,21 @@ public class InventorySystem : MonoBehaviour
 
     public void consume (int _id)
     {
-        if (items[_id].GetComponent<Item>().type == Item.ItemType.Consumables)
+        if (items[_id].obj.GetComponent<Item>().type == Item.ItemType.Consumables)
         {
-            Debug.Log($"Consumed {items[_id].name}");
+            Debug.Log($"Consumed {items[_id].obj.name}");
             // Invoke the consume custome event
-            items[_id].GetComponent<Item>().consumeEvent.Invoke();
-            // Clear the item from the list
-            items.RemoveAt(_id );
-            // Destroy the item from the list
-            Destroy(items[_id], 0.1f);
+            items[_id].obj.GetComponent<Item>().consumeEvent.Invoke();
+            // Reduce the stack number
+            items[_id].stack--;
+            // If the stack is zero
+            if (items[_id].stack == 0)
+            {
+                // Clear the item from the list
+                items.RemoveAt(_id);
+                // Destroy the item from the list
+                Destroy(items[_id].obj, 0.1f);
+            }
             // Update Ui
             Update_UI();
         }

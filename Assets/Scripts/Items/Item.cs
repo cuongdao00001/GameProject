@@ -14,6 +14,7 @@ public class Item : MonoBehaviour
     [Header("Attribute")]
     public InteractionType interactType;
     public ItemType type;
+    public bool stackable = false;
 
     [Header("Examine")]
     public string descriptionText;
@@ -34,6 +35,8 @@ public class Item : MonoBehaviour
         switch (interactType)
         {
             case InteractionType.Pickup:
+                if (!FindObjectOfType<InventorySystem>().CanPickUp())
+                    return;
                 // Add the object to the pickedupitems list
                 FindObjectOfType<InventorySystem>().Pickup(gameObject);
                 // Disable 

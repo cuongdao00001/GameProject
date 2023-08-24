@@ -21,6 +21,10 @@ public class Menemy : MonoBehaviour
     [Header("Attack Sound")]
     [SerializeField] private AudioClip attackSound;
 
+    [Header("Others")]
+    public int coinValue = 10; // Số điểm được cộng sau khi giết enemy
+    private ScoreSystem scoreSystem;
+
     // References
     private Animator aim;
     private Health playerHealth;
@@ -30,6 +34,7 @@ public class Menemy : MonoBehaviour
     {
         aim = GetComponent<Animator>();
         enemyPatrol = GetComponentInParent<EnemyPatrol>();
+        scoreSystem = FindObjectOfType<ScoreSystem>();
     }
 
     // Update is called once per frame
@@ -75,5 +80,23 @@ public class Menemy : MonoBehaviour
         // Player in range
         if (PlayerInSight())
             playerHealth.TakeDamage(damage);
+    }
+
+    private void Die()
+    {
+        // Xử lý khi enemy bị giết
+        if (scoreSystem != null)
+        {
+            scoreSystem.AddScore(coinValue); // Gọi hàm AddScore để tăng điểm
+        }
+        Destroy(gameObject); // Hoặc thực hiện xử lý khác khi enemy bị giết
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Die();
+        }
     }
 }

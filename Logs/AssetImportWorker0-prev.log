@@ -15,7 +15,7 @@ F:/Unity project/My project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51189
+49600
 Successfully changed project path to: F:/Unity project/My project
 F:/Unity project/My project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ F:/Unity project/My project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [12264] Host "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 3550150497 [EditorId] 3550150497 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-569GIDT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [3568] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 2618818286 [EditorId] 2618818286 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-569GIDT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [12264] Host "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 3550150497 [EditorId] 3550150497 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-569GIDT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [3568] Host "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 2618818286 [EditorId] 2618818286 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-569GIDT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 20.55 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 31.60 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.0f1 (fb119bb0b476)
 [Subsystems] Discovering subsystems at path F:/Unity/Unity/Hub/Editor/2022.3.0f1/Editor/Data/Resources/UnitySubsystems
@@ -69,98 +69,99 @@ Initialize mono
 Mono path[0] = 'F:/Unity/Unity/Hub/Editor/2022.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'F:/Unity/Unity/Hub/Editor/2022.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'F:/Unity/Unity/Hub/Editor/2022.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56180
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56916
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: F:/Unity/Unity/Hub/Editor/2022.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.013343 seconds.
-- Loaded All Assemblies, in  0.477 seconds
+Registered in 0.012243 seconds.
+- Loaded All Assemblies, in  1.496 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.346 seconds
-Domain Reload Profiling: 822ms
-	BeginReloadAssembly (155ms)
+- Finished resetting the current domain, in  1.464 seconds
+Domain Reload Profiling: 2960ms
+	BeginReloadAssembly (529ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (47ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (78ms)
-	LoadAllAssembliesAndSetupDomain (181ms)
-		LoadAssemblies (154ms)
+		CreateAndSetChildDomain (4ms)
+	RebuildCommonClasses (152ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (175ms)
+	LoadAllAssembliesAndSetupDomain (610ms)
+		LoadAssemblies (524ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (176ms)
-			TypeCache.Refresh (175ms)
-				TypeCache.ScanAssembly (155ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (346ms)
+		AnalyzeDomain (599ms)
+			TypeCache.Refresh (596ms)
+				TypeCache.ScanAssembly (543ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (1465ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (273ms)
+		SetupLoadedEditorAssemblies (1200ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (11ms)
+			InitializePlatformSupportModulesInManaged (72ms)
+			SetLoadedEditorAssemblies (71ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (182ms)
-			ProcessInitializeOnLoadMethodAttributes (66ms)
+			BeforeProcessingInitializeOnLoad (32ms)
+			ProcessInitializeOnLoadAttributes (803ms)
+			ProcessInitializeOnLoadMethodAttributes (221ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
 Worker process is ready to serve import requests
+Script is not up to date after domain reload: guid(103936a0057e0904e9597a5377af6036) path("Assets/Scripts/Others/PowerupEffect.cs") state(2)
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image F:\Unity project\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image F:\Unity project\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.020 seconds
-Refreshing native plugins compatible for Editor in 3.14 ms, found 4 plugins.
+- Loaded All Assemblies, in  1.996 seconds
+Refreshing native plugins compatible for Editor in 7.36 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.737 seconds
-Domain Reload Profiling: 1757ms
-	BeginReloadAssembly (183ms)
+- Finished resetting the current domain, in  1.306 seconds
+Domain Reload Profiling: 3300ms
+	BeginReloadAssembly (412ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (16ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (28ms)
-	RebuildCommonClasses (54ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (52ms)
-	LoadAllAssembliesAndSetupDomain (714ms)
-		LoadAssemblies (432ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (56ms)
+	RebuildCommonClasses (75ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (74ms)
+	LoadAllAssembliesAndSetupDomain (1411ms)
+		LoadAssemblies (794ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (381ms)
-			TypeCache.Refresh (347ms)
-				TypeCache.ScanAssembly (326ms)
-			ScanForSourceGeneratedMonoScriptInfo (27ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (737ms)
+		AnalyzeDomain (866ms)
+			TypeCache.Refresh (803ms)
+				TypeCache.ScanAssembly (748ms)
+			ScanForSourceGeneratedMonoScriptInfo (51ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1306ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (533ms)
+		SetupLoadedEditorAssemblies (942ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (8ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (81ms)
-			ProcessInitializeOnLoadAttributes (368ms)
-			ProcessInitializeOnLoadMethodAttributes (68ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
+			BeforeProcessingInitializeOnLoad (162ms)
+			ProcessInitializeOnLoadAttributes (694ms)
+			ProcessInitializeOnLoadMethodAttributes (62ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 5.74 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 4.77 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4093 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 69 unused Assets / (245.0 KB). Loaded Objects now: 4555.
-Memory consumption went from 144.2 MB to 144.0 MB.
-Total: 7.843000 ms (FindLiveObjects: 0.571000 ms CreateObjectMapping: 1.117400 ms MarkObjects: 5.805400 ms  DeleteObjects: 0.348000 ms)
+Unloading 4097 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (244.6 KB). Loaded Objects now: 4559.
+Memory consumption went from 144.4 MB to 144.1 MB.
+Total: 10.555300 ms (FindLiveObjects: 0.777600 ms CreateObjectMapping: 0.589600 ms MarkObjects: 8.384400 ms  DeleteObjects: 0.800300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -170,122 +171,67 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/HealthBuff.cs: df56b7fc9d820d075989d46f7bc1058f -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 4071.869156 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Texture/TX Tileset Ground.png
-  artifactKey: Guid(157cbc340d2b7e64ab85168e80e95550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Texture/TX Tileset Ground.png using Guid(157cbc340d2b7e64ab85168e80e95550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '930a5e27aa947074c964f7baa0bff682') in 0.624398 seconds
+  Time since last request: 504588.958000 seconds.
+  path: Assets/Scripts/Others/DamageBuff.cs
+  artifactKey: Guid(04deb2195ddaedf4d877c3cdecf6a385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Others/DamageBuff.cs using Guid(04deb2195ddaedf4d877c3cdecf6a385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fde60b494b0b03a12285f43d9e191045') in 0.006234 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 167
-========================================================================
-Received Import Request.
-  Time since last request: 6.806929 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Texture/TX Tileset Ground.png
-  artifactKey: Guid(157cbc340d2b7e64ab85168e80e95550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Texture/TX Tileset Ground.png using Guid(157cbc340d2b7e64ab85168e80e95550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05abcdca8f36ec34781a295c43ebad2b') in 0.490394 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 167
-========================================================================
-Received Import Request.
-  Time since last request: 9.465515 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Texture/TX Tileset Ground.png
-  artifactKey: Guid(157cbc340d2b7e64ab85168e80e95550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Texture/TX Tileset Ground.png using Guid(157cbc340d2b7e64ab85168e80e95550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47e2e09c818b1d62bcd1a5d8039ecee7') in 0.521287 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 167
-========================================================================
-Received Import Request.
-  Time since last request: 5.792173 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Texture/TX Tileset Ground.png
-  artifactKey: Guid(157cbc340d2b7e64ab85168e80e95550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Texture/TX Tileset Ground.png using Guid(157cbc340d2b7e64ab85168e80e95550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3532719ff3b2827424f516a3c07ddc8') in 0.567091 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 167
-========================================================================
-Received Import Request.
-  Time since last request: 4.127689 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Texture/TX Tileset Ground.png
-  artifactKey: Guid(157cbc340d2b7e64ab85168e80e95550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Texture/TX Tileset Ground.png using Guid(157cbc340d2b7e64ab85168e80e95550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '343fb5cc1e2ac63fdb827dcfca37e57c') in 0.518057 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 167
-========================================================================
-Received Import Request.
-  Time since last request: 3.705665 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Texture/TX Tileset Ground.png
-  artifactKey: Guid(157cbc340d2b7e64ab85168e80e95550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Texture/TX Tileset Ground.png using Guid(157cbc340d2b7e64ab85168e80e95550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de29b5b61a50f30c6fa9e59e035e0712') in 0.542916 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 167
-========================================================================
-Received Import Request.
-  Time since last request: 3.690465 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Texture/TX Tileset Ground.png
-  artifactKey: Guid(157cbc340d2b7e64ab85168e80e95550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Texture/TX Tileset Ground.png using Guid(157cbc340d2b7e64ab85168e80e95550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5225698c62d006bb9bf5d499144b0c89') in 0.560164 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 167
-========================================================================
-Received Import Request.
-  Time since last request: 3.360760 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Texture/TX Tileset Ground.png
-  artifactKey: Guid(157cbc340d2b7e64ab85168e80e95550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Texture/TX Tileset Ground.png using Guid(157cbc340d2b7e64ab85168e80e95550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90ab1d09d2c730034f863734860cfb14') in 0.563244 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 167
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image F:\Unity project\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image F:\Unity project\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.784 seconds
-Refreshing native plugins compatible for Editor in 2.51 ms, found 4 plugins.
+- Loaded All Assemblies, in  1.814 seconds
+Refreshing native plugins compatible for Editor in 4.73 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.002 seconds
-Domain Reload Profiling: 1786ms
-	BeginReloadAssembly (156ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (16ms)
+- Finished resetting the current domain, in  2.062 seconds
+Domain Reload Profiling: 3875ms
+	BeginReloadAssembly (699ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (134ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (41ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (539ms)
-		LoadAssemblies (287ms)
+		ReleaseScriptingObjects (2ms)
+		CreateAndSetChildDomain (220ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (73ms)
+	LoadAllAssembliesAndSetupDomain (975ms)
+		LoadAssemblies (557ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (322ms)
-			TypeCache.Refresh (314ms)
-				TypeCache.ScanAssembly (299ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (1003ms)
+		AnalyzeDomain (649ms)
+			TypeCache.Refresh (628ms)
+				TypeCache.ScanAssembly (561ms)
+			ScanForSourceGeneratedMonoScriptInfo (13ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (2063ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (512ms)
+		SetupLoadedEditorAssemblies (437ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (73ms)
-			ProcessInitializeOnLoadAttributes (379ms)
-			ProcessInitializeOnLoadMethodAttributes (45ms)
+			BeforeProcessingInitializeOnLoad (107ms)
+			ProcessInitializeOnLoadAttributes (275ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
 			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (19ms)
-Refreshing native plugins compatible for Editor in 4.06 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 3.01 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4074 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (217.1 KB). Loaded Objects now: 4567.
-Memory consumption went from 144.0 MB to 143.8 MB.
-Total: 4.115000 ms (FindLiveObjects: 0.355800 ms CreateObjectMapping: 0.392300 ms MarkObjects: 3.119100 ms  DeleteObjects: 0.246700 ms)
+Unloading 4078 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (217.4 KB). Loaded Objects now: 4564.
+Memory consumption went from 139.7 MB to 139.4 MB.
+Total: 5.527800 ms (FindLiveObjects: 0.406500 ms CreateObjectMapping: 0.350000 ms MarkObjects: 4.524900 ms  DeleteObjects: 0.244800 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -296,866 +242,75 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/HealthBuff.cs: df56b7fc9d820d075989d46f7bc1058f -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1007.339452 seconds.
-  path: Assets/Tilemaps/New Palette.prefab
-  artifactKey: Guid(ca1f1549c71eb364ab0141483bbd66f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/New Palette.prefab using Guid(ca1f1549c71eb364ab0141483bbd66f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da1e2d1b6f7926fd6276f1283c7cd787') in 0.145027 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 73.845510 seconds.
-  path: Assets/Tilemaps/Palettes
-  artifactKey: Guid(ff8d1f53e1dd345479fb69e4d33cf529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Palettes using Guid(ff8d1f53e1dd345479fb69e4d33cf529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c1d5d705cbbfdf11dad98b86287ae29') in 0.000582 seconds
+  Time since last request: 556.892506 seconds.
+  path: Assets/Scripts/Others/DamageBuff.cs
+  artifactKey: Guid(04deb2195ddaedf4d877c3cdecf6a385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Others/DamageBuff.cs using Guid(04deb2195ddaedf4d877c3cdecf6a385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5197d7a91b773fdd048df825df21c666') in 0.009132 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 48.490726 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground.prefab
-  artifactKey: Guid(027db5ce1ff2f4142b49c3de3b59625a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground.prefab using Guid(027db5ce1ff2f4142b49c3de3b59625a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98532a6ec249462f3111a4f6f6dde38b') in 0.104094 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 341
-========================================================================
-Received Import Request.
-  Time since last request: 6.628539 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_0.asset
-  artifactKey: Guid(9c5983ebc89f8aa4a9de8dbb31c0e7c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_0.asset using Guid(9c5983ebc89f8aa4a9de8dbb31c0e7c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be48273ee8b386176d75128a71b018cb') in 0.036631 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_28.asset
-  artifactKey: Guid(c1e8e06d567a8be40ae505b506e7254b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_28.asset using Guid(c1e8e06d567a8be40ae505b506e7254b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be96d41072dac7e5366f18cbdaf1553f') in 0.019524 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_4.asset
-  artifactKey: Guid(f2072758f4ae02f478158bab4474a282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_4.asset using Guid(f2072758f4ae02f478158bab4474a282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4526946752495af45a0f1f667d669cb1') in 0.019831 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_15.asset
-  artifactKey: Guid(fa81aa196de90eb438bddb9b08a3ff49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_15.asset using Guid(fa81aa196de90eb438bddb9b08a3ff49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '731ca103242ee2ef4cbd00d2bb5eeb2c') in 0.013437 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_5.asset
-  artifactKey: Guid(e73be8d24f17223439bf92f55178abe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_5.asset using Guid(e73be8d24f17223439bf92f55178abe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8300f302dd1e9ccc604e4b4255204fe3') in 0.021176 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_16.asset
-  artifactKey: Guid(219c56611456eb4439f93a31a07abe72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_16.asset using Guid(219c56611456eb4439f93a31a07abe72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e8e14d4b5c1690187fae72584379520') in 0.016524 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_26.asset
-  artifactKey: Guid(aa2d87783e6e6b24b84c72a31592c6de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_26.asset using Guid(aa2d87783e6e6b24b84c72a31592c6de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd35347e4846b6f823bb52e3e8c1a1c23') in 0.024100 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_30.asset
-  artifactKey: Guid(36df7a307fa03dd4e947b2d5a8996ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_30.asset using Guid(36df7a307fa03dd4e947b2d5a8996ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2421c073e8bfd2cf546adf6f1f850e61') in 0.020753 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_23.asset
-  artifactKey: Guid(d0b94a9a749b7cd4d8cae8603effadd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_23.asset using Guid(d0b94a9a749b7cd4d8cae8603effadd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c6d5414ef15a8f61cab2abb76c899da') in 0.023256 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_21.asset
-  artifactKey: Guid(26f6567865bdaf0438cb400adef5888d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_21.asset using Guid(26f6567865bdaf0438cb400adef5888d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1992129c27ec318c9b33b01c44890dc') in 0.025851 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_7.asset
-  artifactKey: Guid(44a1c8fde5b7fe6478463ee5b9e40fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_7.asset using Guid(44a1c8fde5b7fe6478463ee5b9e40fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4bcc2b164385073b52e21196be2efb3') in 0.022137 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_17.asset
-  artifactKey: Guid(3a98eb28e20145b468ef3e57b8a6d56a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_17.asset using Guid(3a98eb28e20145b468ef3e57b8a6d56a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52ddf60733e48c0d765f06372456348d') in 0.023865 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_22.asset
-  artifactKey: Guid(81ab65db075312c47a4a007cc53527fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_22.asset using Guid(81ab65db075312c47a4a007cc53527fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f69d3bc9d8560842deaaa231bd634c4') in 0.021355 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_6.asset
-  artifactKey: Guid(198e5c16d3ed06e419a600a955df3bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_6.asset using Guid(198e5c16d3ed06e419a600a955df3bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '413029b8278cf9b428fa30fa7391868f') in 0.026695 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_24.asset
-  artifactKey: Guid(2e947413d8250534093f48a3aa29cacd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_24.asset using Guid(2e947413d8250534093f48a3aa29cacd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a0d66da067ae7d741aafb2ddea6c408') in 0.024149 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_31.asset
-  artifactKey: Guid(2d124724b7a293044ba9d11950b0a66b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_31.asset using Guid(2d124724b7a293044ba9d11950b0a66b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c518b043b2db17d4167526cbeb15de20') in 0.021406 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_29.asset
-  artifactKey: Guid(f584808457934554cb836690b6ee14f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_29.asset using Guid(f584808457934554cb836690b6ee14f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef84fe430903acedc129b77efb8cf93f') in 0.024893 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_35.asset
-  artifactKey: Guid(0ba9a9a782147074f8a089b2bb2e6be5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_35.asset using Guid(0ba9a9a782147074f8a089b2bb2e6be5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc433679e3e137d22b818b9070cb4e65') in 0.021706 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_33.asset
-  artifactKey: Guid(55330d3b032fd364f8b1de66d358ec99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_33.asset using Guid(55330d3b032fd364f8b1de66d358ec99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2b64b3e937da7e88fe676a58068dc6a') in 0.024971 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_12.asset
-  artifactKey: Guid(ad1654d7c7b4f0841ab6333b8ef09583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Tileset Palette/TP Ground/TX Tileset Ground_12.asset using Guid(ad1654d7c7b4f0841ab6333b8ef09583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b240a79b0ffcdf321b9a190afe92b1fd') in 0.021155 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 77.531957 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground.prefab
-  artifactKey: Guid(1d833a341638e144bacd79bda542620f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground.prefab using Guid(1d833a341638e144bacd79bda542620f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bce8b561c5af054f5b467fdc3eea507') in 0.079904 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 341
-========================================================================
-Received Import Request.
-  Time since last request: 168.952623 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_0.asset
-  artifactKey: Guid(6137e8154cd86ab41850cb2445cb15f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_0.asset using Guid(6137e8154cd86ab41850cb2445cb15f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e54ce96da1b1c9255615c02b838cfc6') in 0.014327 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_21.asset
-  artifactKey: Guid(2a692868ac0ebe74082a8c5edf3447f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_21.asset using Guid(2a692868ac0ebe74082a8c5edf3447f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0fb5b49e76b297de3d31c2ea6141f03') in 0.019161 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_19.asset
-  artifactKey: Guid(af228e9cef837f34db1fda998f1f448c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_19.asset using Guid(af228e9cef837f34db1fda998f1f448c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '036e5e421ff2f20c8d8c04701c88b272') in 0.013497 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_36.asset
-  artifactKey: Guid(5d3f9ab600890af48a575be606924f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_36.asset using Guid(5d3f9ab600890af48a575be606924f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0351bca179a6706f786c89aa4ff93a8') in 0.022332 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_14.asset
-  artifactKey: Guid(d85497d296af08f4e9fb1e6be520a0bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_14.asset using Guid(d85497d296af08f4e9fb1e6be520a0bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fba2ca278f785feb7076935acfe5f7d') in 0.012096 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_5.asset
-  artifactKey: Guid(e55d0c8d7b6b9c74e81599f938e0ed41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_5.asset using Guid(e55d0c8d7b6b9c74e81599f938e0ed41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '586714e26a1954e9bf0e83cfff029bb7') in 0.011427 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_12.asset
-  artifactKey: Guid(3c90374db7fdf3d4dae15c19fa346727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_12.asset using Guid(3c90374db7fdf3d4dae15c19fa346727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a70c2577990fc5e799500b42be1c170') in 0.024870 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_2.asset
-  artifactKey: Guid(3490b86817c70434d93531aa4859cb1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_2.asset using Guid(3490b86817c70434d93531aa4859cb1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecdea8ee4218d3ac682f71008af56b7c') in 0.024369 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_23.asset
-  artifactKey: Guid(e9cec16cd358fbd4b90c67f0f0fa378c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_23.asset using Guid(e9cec16cd358fbd4b90c67f0f0fa378c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07b64ca713c05aafc51783a0168ec378') in 0.021124 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_26.asset
-  artifactKey: Guid(9dabac82a66e6824d8336a59699494e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_26.asset using Guid(9dabac82a66e6824d8336a59699494e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd7baa818202a6040b58f1b706dbe7c2') in 0.010639 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_6.asset
-  artifactKey: Guid(ec50c2f639f15684993e61886428731e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_6.asset using Guid(ec50c2f639f15684993e61886428731e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '234e81cbe72b768911c095aa90a44364') in 0.015391 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_32.asset
-  artifactKey: Guid(235f40711e5302f4a94579f6ea1e0109) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_32.asset using Guid(235f40711e5302f4a94579f6ea1e0109) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fac5ff106a4fd764bb0fb7d301285c8') in 0.027453 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_31.asset
-  artifactKey: Guid(294e17678b523a94c8ce5c56e03d21c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_31.asset using Guid(294e17678b523a94c8ce5c56e03d21c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b619d0015f39645cdae59c04bd8c40c') in 0.024165 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_35.asset
-  artifactKey: Guid(31b84571543ccdd4395f320adb3927fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_35.asset using Guid(31b84571543ccdd4395f320adb3927fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aa3f66828f87be9e3a0162ec9580df9') in 0.007549 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_15.asset
-  artifactKey: Guid(b13b3b9ce8814fb41b96081d6844c79f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_15.asset using Guid(b13b3b9ce8814fb41b96081d6844c79f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c91179e6f55080a8696bfbf637545973') in 0.013303 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_20.asset
-  artifactKey: Guid(9495c4b2fcdecc441b7ba1d43ca401e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_20.asset using Guid(9495c4b2fcdecc441b7ba1d43ca401e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a99f440704163e91f0ec4a10e622fd3') in 0.011488 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_27.asset
-  artifactKey: Guid(9ba2f2cd7191f7341a944063db837efa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_27.asset using Guid(9ba2f2cd7191f7341a944063db837efa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c00c7963c3153411e052160543c554a2') in 0.011190 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_30.asset
-  artifactKey: Guid(74537da33ffea9341932219d1d54aa85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_30.asset using Guid(74537da33ffea9341932219d1d54aa85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb4fbb91d7571aa0ae1c5ed1e6858ce0') in 0.022872 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 19.621041 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_37.asset
-  artifactKey: Guid(9daf81989ac7acf4498316fc82f2f0bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_37.asset using Guid(9daf81989ac7acf4498316fc82f2f0bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c1ba6bbf392af842f1579a055825836') in 0.016346 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_40.asset
-  artifactKey: Guid(46635f1e4752a4940849e491b071da96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_40.asset using Guid(46635f1e4752a4940849e491b071da96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '587477eff0390e18f2811a07c92b6076') in 0.017711 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_47.asset
-  artifactKey: Guid(9f79bf97d43ce434d8086b2fc70aed21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_47.asset using Guid(9f79bf97d43ce434d8086b2fc70aed21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '388ce692ef4a08e3935923b7425e0567') in 0.011206 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_48.asset
-  artifactKey: Guid(07d71807f82036342afeb065b415724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_48.asset using Guid(07d71807f82036342afeb065b415724a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9a9c9dde8b4cf52a1ea48ec00a73fe6') in 0.020986 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_51.asset
-  artifactKey: Guid(dbbe2e28dbc6726498dad378e3b55c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_51.asset using Guid(dbbe2e28dbc6726498dad378e3b55c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67af62d578f0a052861be076f6d6b0c2') in 0.024149 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_49.asset
-  artifactKey: Guid(b1b51fa1e93442046a96b29dffbc5b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_49.asset using Guid(b1b51fa1e93442046a96b29dffbc5b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '685c2af575c1ce7e27a9ea4dd9af65d9') in 0.021931 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_53.asset
-  artifactKey: Guid(91e27357f81b24b408ad8c8b8cc169c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_53.asset using Guid(91e27357f81b24b408ad8c8b8cc169c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c9092cbb794079af5a616fb2cd019b9') in 0.022399 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_41.asset
-  artifactKey: Guid(e17fab1b9c198f240b8dc05a6b5a8ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_41.asset using Guid(e17fab1b9c198f240b8dc05a6b5a8ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2805fcf0d320ed4535d606c1bb9f7c3') in 0.022061 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_45.asset
-  artifactKey: Guid(43b05dd640cfbbc49988b7080e612cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_45.asset using Guid(43b05dd640cfbbc49988b7080e612cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb0bb7d7e2fd2f999e13b870834d4e05') in 0.025384 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_44.asset
-  artifactKey: Guid(1fc0fde0dbdd9fb44a1c5439efccaef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_44.asset using Guid(1fc0fde0dbdd9fb44a1c5439efccaef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b076bf87a954fb07859aa8101f609e16') in 0.024451 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000088 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_60.asset
-  artifactKey: Guid(a325f826ebe299a4da0a03ab457e4452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_60.asset using Guid(a325f826ebe299a4da0a03ab457e4452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bb6c4ee553e123efb48c7c4e652c1cf') in 0.008163 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_50.asset
-  artifactKey: Guid(648914e5b30b894438027ee10119897e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_50.asset using Guid(648914e5b30b894438027ee10119897e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6d47693ed526f7d0f7334d4e501c91a') in 0.020433 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1.112075 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground.prefab
-  artifactKey: Guid(1d833a341638e144bacd79bda542620f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground.prefab using Guid(1d833a341638e144bacd79bda542620f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ca7aa5fd403ef83a0cfeebee0370e06') in 0.103225 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 176
-========================================================================
-Received Import Request.
-  Time since last request: 32.746005 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground
-  artifactKey: Guid(7a1b7ada8719fd241bf8c9d76405f068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground using Guid(7a1b7ada8719fd241bf8c9d76405f068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '706e33dabb9b2b429f33ccd2fdc9db26') in 0.000472 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.097420 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_61.asset
-  artifactKey: Guid(572abffc53ae5474a93681e9c6c9eb38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_61.asset using Guid(572abffc53ae5474a93681e9c6c9eb38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c31eb68b59c31c328c41d0b7b34f7979') in 0.023750 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_70.asset
-  artifactKey: Guid(a31359b771508ad44ac5d8f4d9ca4eaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_70.asset using Guid(a31359b771508ad44ac5d8f4d9ca4eaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a06864faea3fbab939f20c2b3f05c2c5') in 0.015508 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_77.asset
-  artifactKey: Guid(3b38181e78597724a8587157db834423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_77.asset using Guid(3b38181e78597724a8587157db834423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1450e44a491b1ce7fd9c26e7f079833') in 0.017086 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_84.asset
-  artifactKey: Guid(85d4a65584c0e7c4f9286c59f7468462) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_84.asset using Guid(85d4a65584c0e7c4f9286c59f7468462) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e68658dd6720ca8cfa272c90a691d311') in 0.016561 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_87.asset
-  artifactKey: Guid(1755d31efe487124c91f50b761dc0d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_87.asset using Guid(1755d31efe487124c91f50b761dc0d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '698b64c106e7335e64fdf67ebe49cf82') in 0.016111 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_89.asset
-  artifactKey: Guid(4d26fc31a88ee29479c05f874660d806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_89.asset using Guid(4d26fc31a88ee29479c05f874660d806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5980af0cf1d16285e0cdd12f204101b') in 0.019563 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_94.asset
-  artifactKey: Guid(5d6f2b01a149a56458d1bd1f3fe82c58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_94.asset using Guid(5d6f2b01a149a56458d1bd1f3fe82c58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '912e996b5455af175d37af963b020dc1') in 0.018663 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_81.asset
-  artifactKey: Guid(af1928df3d672044c99b490957d879ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_81.asset using Guid(af1928df3d672044c99b490957d879ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a15e59125b99e33939e2233f691fd0a') in 0.008309 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_73.asset
-  artifactKey: Guid(0de04b9655ef888428fff20e3721a383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_73.asset using Guid(0de04b9655ef888428fff20e3721a383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a921945e95da03b832e00d763cb943ab') in 0.008102 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_93.asset
-  artifactKey: Guid(0f19dd1290387e84a99fcca68c327e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_93.asset using Guid(0f19dd1290387e84a99fcca68c327e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ecae0efc88eb7615b40af7e65d310a5') in 0.010444 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_92.asset
-  artifactKey: Guid(99afeabf9cbc1cd41ab7600a4affe0dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_92.asset using Guid(99afeabf9cbc1cd41ab7600a4affe0dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7d9006d123605245bab8c71cd0f6bff') in 0.006471 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_79.asset
-  artifactKey: Guid(854fe597042417342b1d331ef55b5beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_79.asset using Guid(854fe597042417342b1d331ef55b5beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ee07c50c478908cccba6dff47337e54') in 0.010107 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_74.asset
-  artifactKey: Guid(2e5f4f1b208974d48a1dbc67ee632eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_74.asset using Guid(2e5f4f1b208974d48a1dbc67ee632eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4826cf6e38151ec8a4e97ca5bae22949') in 0.008487 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_71.asset
-  artifactKey: Guid(75abe4f5fe6d8394a83aa38cacc6e9c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_71.asset using Guid(75abe4f5fe6d8394a83aa38cacc6e9c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06869007dd5d04c0b6d4fd384b91e871') in 0.007563 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_80.asset
-  artifactKey: Guid(467c2c0bd8ee9974dbb872092d04fbdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_80.asset using Guid(467c2c0bd8ee9974dbb872092d04fbdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc02abb57dd4fd5850b90c9193890a1d') in 0.020445 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_68.asset
-  artifactKey: Guid(d998e39a53c5b094db1c98068b1e2258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_68.asset using Guid(d998e39a53c5b094db1c98068b1e2258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43ae0aa088e94f7dd7746d98fe5a4a1f') in 0.022853 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_75.asset
-  artifactKey: Guid(0d6dab35eba9e2946944896b0ef58357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_75.asset using Guid(0d6dab35eba9e2946944896b0ef58357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b33b8875d338bfa917d17deb44ef5d3c') in 0.022986 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_91.asset
-  artifactKey: Guid(ce3e7727e6ca53f44aaf4907918b8475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_91.asset using Guid(ce3e7727e6ca53f44aaf4907918b8475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abd28a0c8804fce4f7cf84220db6f203') in 0.019650 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_67.asset
-  artifactKey: Guid(a607a8393dab1f1449ba9019d73f3f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TP Ground/TX Tileset Ground_67.asset using Guid(a607a8393dab1f1449ba9019d73f3f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cae65d07615048c271a1117460686467') in 0.020402 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 88.816514 seconds.
-  path: Assets/Tilemaps/Palettes/New Palette.prefab
-  artifactKey: Guid(ca1f1549c71eb364ab0141483bbd66f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Palettes/New Palette.prefab using Guid(ca1f1549c71eb364ab0141483bbd66f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16369d863c53bc791189311a9762bf89') in 0.031859 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time since last request: 141.355983 seconds.
-  path: Assets/Tilemaps/Palette/New Palette.prefab
-  artifactKey: Guid(cab70d403cbe01841a5e4785db3598df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Palette/New Palette.prefab using Guid(cab70d403cbe01841a5e4785db3598df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f9ef54fd5a73b8196754c7f6c5a2773') in 0.018460 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 38.895540 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_0.asset
-  artifactKey: Guid(bc9635982f02f4f4a87a18d898433a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_0.asset using Guid(bc9635982f02f4f4a87a18d898433a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8d79578b6a8d00c6404ff263e271fba') in 0.027574 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_25.asset
-  artifactKey: Guid(cc92d283e8ae9aa4282512e52b2d4531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_25.asset using Guid(cc92d283e8ae9aa4282512e52b2d4531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '421e0062b9b4bc982707ebb165b459ed') in 0.014566 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000074 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_13.asset
-  artifactKey: Guid(a45da1a076854884f8a77bcc4260b228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_13.asset using Guid(a45da1a076854884f8a77bcc4260b228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b16d2b3676b76d11e0eade5f107e71d8') in 0.009282 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_34.asset
-  artifactKey: Guid(1006aa99913e8f24898fe2caacd059e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_34.asset using Guid(1006aa99913e8f24898fe2caacd059e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2af76fce8389dae8eaabbd3d1b0a3925') in 0.021759 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000069 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_4.asset
-  artifactKey: Guid(83a45a5df6a778e4380d7d6be233130c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_4.asset using Guid(83a45a5df6a778e4380d7d6be233130c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1d60c14a7d1cc4187d8ae58620be76c') in 0.010308 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_3.asset
-  artifactKey: Guid(cafcdedef2804784787f2e094af88c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_3.asset using Guid(cafcdedef2804784787f2e094af88c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09171b5b54823d522a9f63a934f767f5') in 0.014960 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_19.asset
-  artifactKey: Guid(1858e7d070de1f04491f2023e8659144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_19.asset using Guid(1858e7d070de1f04491f2023e8659144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c8175d5fc16679e3477b5680743ff76') in 0.010662 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_6.asset
-  artifactKey: Guid(16def50333c399c42b8b70cbb8819b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_6.asset using Guid(16def50333c399c42b8b70cbb8819b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e81b701f898da9b38d519a1f697e87f8') in 0.017865 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_10.asset
-  artifactKey: Guid(4c88a3de001fbac4fbc650bebaba3fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_10.asset using Guid(4c88a3de001fbac4fbc650bebaba3fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f2b135e8de3688d4e13e2b28d83735a') in 0.021788 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_28.asset
-  artifactKey: Guid(04b7628eea6b3904e9eed5c58e598e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_28.asset using Guid(04b7628eea6b3904e9eed5c58e598e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dd56e33a3e8a8f091b289a190abea3e') in 0.011763 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_24.asset
-  artifactKey: Guid(ea6c158bae292084a88b543a97722baf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_24.asset using Guid(ea6c158bae292084a88b543a97722baf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9b5583d40ddfed1337e476e14721bbf') in 0.015641 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_22.asset
-  artifactKey: Guid(af7d261b00516a24fbf4753b060cb84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_22.asset using Guid(af7d261b00516a24fbf4753b060cb84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '739d0c98051da4d2834b28ca13412e9c') in 0.029641 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_33.asset
-  artifactKey: Guid(032c92a98fb302e4088073ec588280b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_33.asset using Guid(032c92a98fb302e4088073ec588280b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4a2755586a3928699847c744357f6c4') in 0.014015 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_15.asset
-  artifactKey: Guid(d7358c3a950cf7541bfaee8406d6f206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_15.asset using Guid(d7358c3a950cf7541bfaee8406d6f206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fa298e6e9ccc62fabb14d0c169d5832') in 0.013103 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_17.asset
-  artifactKey: Guid(023ce36ff14886f4b8984514c413dcd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_17.asset using Guid(023ce36ff14886f4b8984514c413dcd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75bb6dff62f6d7a9c7117b0f6ea63aa4') in 0.011647 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_7.asset
-  artifactKey: Guid(672dc1b9deec18048aba2dc729e28ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_7.asset using Guid(672dc1b9deec18048aba2dc729e28ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c62124d1720c394c0cdf53787fc4e2f') in 0.026003 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_21.asset
-  artifactKey: Guid(f861e5e56a9734546b902afaaf57140a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_21.asset using Guid(f861e5e56a9734546b902afaaf57140a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dc1a226395dd5dbb02abf8347e49366') in 0.032725 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_35.asset
-  artifactKey: Guid(4dd9f6078fb0b8345a554c235f54d76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_35.asset using Guid(4dd9f6078fb0b8345a554c235f54d76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f7a973a6e976356012bfd6b8d38d942') in 0.010508 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_2.asset
-  artifactKey: Guid(f49a58c035ef5e44b9ceca24ce9f3545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_2.asset using Guid(f49a58c035ef5e44b9ceca24ce9f3545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8267b52388fdeb581053da0b3b5fe369') in 0.022532 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 12.437208 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_37.asset
-  artifactKey: Guid(92e7b283b9b07b9469c3827bc42327ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_37.asset using Guid(92e7b283b9b07b9469c3827bc42327ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfae2c1ab4334e0f583a2083acf3417a') in 0.016053 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_47.asset
-  artifactKey: Guid(633ffa4ff61f01c4d9ed6866d079769d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_47.asset using Guid(633ffa4ff61f01c4d9ed6866d079769d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27ad2e6170d1212f71b9667ae9786c11') in 0.007581 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_43.asset
-  artifactKey: Guid(527a578416cc7ed468a45ecf5531071f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_43.asset using Guid(527a578416cc7ed468a45ecf5531071f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8e6145600fcdff4fbaceab0ac0e8812') in 0.023128 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_46.asset
-  artifactKey: Guid(d8a53a9ada04a1947a2cd4e65113f453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_46.asset using Guid(d8a53a9ada04a1947a2cd4e65113f453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5af38907282dfefc7d717b04a0f45163') in 0.009470 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_44.asset
-  artifactKey: Guid(28f8a7b359f32fe4b9897e67b0140e90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_44.asset using Guid(28f8a7b359f32fe4b9897e67b0140e90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e5017533806cb487d789c8e161a33bc') in 0.021155 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+  Time since last request: 3.895987 seconds.
+  path: Assets/Scripts/Others/New Damage Buff.asset
+  artifactKey: Guid(c037b55a7e104c74d97758b5a8352692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Others/New Damage Buff.asset using Guid(c037b55a7e104c74d97758b5a8352692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7d89336110e6d0d854b09c4f110db9a') in 0.012997 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image F:\Unity project\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image F:\Unity project\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  0.843 seconds
-Refreshing native plugins compatible for Editor in 3.14 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 3.78 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.150 seconds
-Domain Reload Profiling: 1993ms
-	BeginReloadAssembly (209ms)
+- Finished resetting the current domain, in  1.234 seconds
+Domain Reload Profiling: 2078ms
+	BeginReloadAssembly (170ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (21ms)
+		DisableScriptedObjects (16ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (66ms)
-	RebuildCommonClasses (53ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (529ms)
-		LoadAssemblies (289ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (579ms)
+		LoadAssemblies (333ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (320ms)
-			TypeCache.Refresh (312ms)
-				TypeCache.ScanAssembly (286ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (1151ms)
+		AnalyzeDomain (322ms)
+			TypeCache.Refresh (314ms)
+				TypeCache.ScanAssembly (299ms)
+			ScanForSourceGeneratedMonoScriptInfo (3ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1235ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (560ms)
+		SetupLoadedEditorAssemblies (563ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (101ms)
-			ProcessInitializeOnLoadAttributes (397ms)
-			ProcessInitializeOnLoadMethodAttributes (48ms)
+			BeforeProcessingInitializeOnLoad (103ms)
+			ProcessInitializeOnLoadAttributes (395ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
 			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (21ms)
-Refreshing native plugins compatible for Editor in 4.36 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (20ms)
+Refreshing native plugins compatible for Editor in 3.57 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4074 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (217.3 KB). Loaded Objects now: 4909.
-Memory consumption went from 144.7 MB to 144.5 MB.
-Total: 7.717700 ms (FindLiveObjects: 0.556500 ms CreateObjectMapping: 0.474700 ms MarkObjects: 6.305600 ms  DeleteObjects: 0.378800 ms)
+Unloading 4078 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (217.4 KB). Loaded Objects now: 4569.
+Memory consumption went from 139.7 MB to 139.5 MB.
+Total: 7.116400 ms (FindLiveObjects: 0.622900 ms CreateObjectMapping: 0.449200 ms MarkObjects: 5.694200 ms  DeleteObjects: 0.348200 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -1166,58 +321,67 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/HealthBuff.cs: df56b7fc9d820d075989d46f7bc1058f -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 255.328791 seconds.
+  path: Assets/Scripts/Others/Normal Damage Buff.asset
+  artifactKey: Guid(c037b55a7e104c74d97758b5a8352692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Others/Normal Damage Buff.asset using Guid(c037b55a7e104c74d97758b5a8352692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f88c3fa86be45ceb80cc8521ecf21df') in 0.013460 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image F:\Unity project\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image F:\Unity project\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.847 seconds
-Refreshing native plugins compatible for Editor in 2.97 ms, found 4 plugins.
+- Loaded All Assemblies, in  1.117 seconds
+Refreshing native plugins compatible for Editor in 3.45 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.099 seconds
-Domain Reload Profiling: 1945ms
-	BeginReloadAssembly (226ms)
+- Finished resetting the current domain, in  1.582 seconds
+Domain Reload Profiling: 2699ms
+	BeginReloadAssembly (165ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (24ms)
+		DisableScriptedObjects (16ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (78ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (33ms)
-	LoadAllAssembliesAndSetupDomain (528ms)
-		LoadAssemblies (287ms)
+		CreateAndSetChildDomain (41ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (850ms)
+		LoadAssemblies (381ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (318ms)
-			TypeCache.Refresh (310ms)
-				TypeCache.ScanAssembly (293ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
+		AnalyzeDomain (544ms)
+			TypeCache.Refresh (532ms)
+				TypeCache.ScanAssembly (514ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
 			ResolveRequiredComponents (8ms)
-	FinalizeReload (1100ms)
+	FinalizeReload (1583ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (544ms)
+		SetupLoadedEditorAssemblies (503ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (79ms)
-			ProcessInitializeOnLoadAttributes (395ms)
-			ProcessInitializeOnLoadMethodAttributes (48ms)
+			BeforeProcessingInitializeOnLoad (98ms)
+			ProcessInitializeOnLoadAttributes (345ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
 			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 3.96 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 4.28 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4075 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (217.3 KB). Loaded Objects now: 4913.
-Memory consumption went from 145.0 MB to 144.7 MB.
-Total: 7.230200 ms (FindLiveObjects: 0.703800 ms CreateObjectMapping: 0.769500 ms MarkObjects: 5.354200 ms  DeleteObjects: 0.401200 ms)
+Unloading 4078 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (217.3 KB). Loaded Objects now: 4573.
+Memory consumption went from 139.7 MB to 139.5 MB.
+Total: 6.136800 ms (FindLiveObjects: 0.683800 ms CreateObjectMapping: 1.082700 ms MarkObjects: 3.971400 ms  DeleteObjects: 0.397800 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -1228,518 +392,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/HealthBuff.cs: df56b7fc9d820d075989d46f7bc1058f -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 328.103590 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_49.asset
-  artifactKey: Guid(39a8e18c1b37d0d44aa49d9693fe72c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_49.asset using Guid(39a8e18c1b37d0d44aa49d9693fe72c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '264b9597bb1d60d63710714c0ba0c09c') in 0.083818 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_64.asset
-  artifactKey: Guid(5ac41bbf35215a04784d5998854b4c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_64.asset using Guid(5ac41bbf35215a04784d5998854b4c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e980cacb944e23f5a01628dfc5e82ca') in 0.007187 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_67.asset
-  artifactKey: Guid(2678a47fa0b6efe4f9caf0e276a386de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_67.asset using Guid(2678a47fa0b6efe4f9caf0e276a386de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '117f9f5e68dcc06792b73eddfdd3db40') in 0.021314 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000089 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_63.asset
-  artifactKey: Guid(80a7a841effe7b94f889543d542c5996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_63.asset using Guid(80a7a841effe7b94f889543d542c5996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3472cefa1607448d5e001421a080db25') in 0.008513 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_73.asset
-  artifactKey: Guid(12e8e833d8532184987a71920f5c8437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_73.asset using Guid(12e8e833d8532184987a71920f5c8437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cc6e50b5d4c20cb55a4162e1ddccc7e') in 0.007430 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_60.asset
-  artifactKey: Guid(5cbc012c3fc750849963348061cce205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_60.asset using Guid(5cbc012c3fc750849963348061cce205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8a3717e4aa411a832e97636b9c84076') in 0.008820 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_55.asset
-  artifactKey: Guid(517d10ceebd467e4ab47b3cff3f0651e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_55.asset using Guid(517d10ceebd467e4ab47b3cff3f0651e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '167bb87d5b8b0dd206cb5e686af571a0') in 0.011732 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_70.asset
-  artifactKey: Guid(b1a12ab4b02ec3041a99af90726ebba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_70.asset using Guid(b1a12ab4b02ec3041a99af90726ebba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fa6724036067821072307ba16d0c299') in 0.020511 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_80.asset
-  artifactKey: Guid(551ed5945390305419ee0042c4da5d26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_80.asset using Guid(551ed5945390305419ee0042c4da5d26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '348d76a35f4a2cd1bef2450bb61fc2c8') in 0.023786 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_58.asset
-  artifactKey: Guid(0560b1ccd3adaad429067b4f127c634f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_58.asset using Guid(0560b1ccd3adaad429067b4f127c634f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '314d67fa4fe19ca1da2fadea3f35a81d') in 0.018142 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_51.asset
-  artifactKey: Guid(ae43c13fa26ca6548aef1d7f12b298b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_51.asset using Guid(ae43c13fa26ca6548aef1d7f12b298b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cdfbc57b3ae5350d79978b834054086') in 0.008453 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_77.asset
-  artifactKey: Guid(63fe0a32667045a4fa514b1aaef120a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_77.asset using Guid(63fe0a32667045a4fa514b1aaef120a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fff93ce36a32a4981261e49ad060d224') in 0.009672 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_52.asset
-  artifactKey: Guid(4fa9d9797e1ece642bdbe928a416f097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_52.asset using Guid(4fa9d9797e1ece642bdbe928a416f097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04c479f091c444e51aae92112f846478') in 0.008300 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_74.asset
-  artifactKey: Guid(5d4b2bd3cf84fc94183013cb76e6cb3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_74.asset using Guid(5d4b2bd3cf84fc94183013cb76e6cb3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5926f3fc7a11668567d1db776b6d245d') in 0.006895 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_56.asset
-  artifactKey: Guid(15415322886999a4fab21465b36a8b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_56.asset using Guid(15415322886999a4fab21465b36a8b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3265cab2c37beb05c569fc782882251b') in 0.020337 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_72.asset
-  artifactKey: Guid(b9b132aebec312540b2dd332eec43a67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_72.asset using Guid(b9b132aebec312540b2dd332eec43a67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd44d00aa3fcf5d1f5cd5048df5105faf') in 0.007856 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_71.asset
-  artifactKey: Guid(5f6ad8dfb19cca048a390d76ee9582bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_71.asset using Guid(5f6ad8dfb19cca048a390d76ee9582bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6ef1a288d50d9def4a890875b0ee6e1') in 0.007777 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_59.asset
-  artifactKey: Guid(cf668602f76023448ba1b3e29add2336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_59.asset using Guid(cf668602f76023448ba1b3e29add2336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2b5bafc9add7d37a1befb60fb0f7d39') in 0.011178 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_53.asset
-  artifactKey: Guid(27ed67f15b16fb847b55add8b9d92407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_53.asset using Guid(27ed67f15b16fb847b55add8b9d92407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcf5f325fbe51e4148590fc0a85f309a') in 0.009662 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_83.asset
-  artifactKey: Guid(75d3d17eddd9e9440ba1542f0f6e5796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_83.asset using Guid(75d3d17eddd9e9440ba1542f0f6e5796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9da19f805760d467b154761b160408ac') in 0.016559 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.058514 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_85.asset
-  artifactKey: Guid(2c719d7103d7d7f418dc0a4ba8c4c697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_85.asset using Guid(2c719d7103d7d7f418dc0a4ba8c4c697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b465fb54c025c17fee8dc21329d71562') in 0.022945 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_95.asset
-  artifactKey: Guid(0f2bfcf3e75160348b393e574a55bbd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_95.asset using Guid(0f2bfcf3e75160348b393e574a55bbd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57e264cd58b17027d61c90b3ff0ad6bd') in 0.011397 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_94.asset
-  artifactKey: Guid(7ffce3cef118abd45933ed77a6b67dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_94.asset using Guid(7ffce3cef118abd45933ed77a6b67dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ef7b9f914d4614d1b788f40084cd0f7') in 0.009596 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_89.asset
-  artifactKey: Guid(245addf9e349a2b4e8c561b364b72d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_89.asset using Guid(245addf9e349a2b4e8c561b364b72d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ffa1c9182b6832dd33c34109e692aa0') in 0.007855 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_104.asset
-  artifactKey: Guid(3cc8b61b21627114eb616871f2c64119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_104.asset using Guid(3cc8b61b21627114eb616871f2c64119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63d3798469ace05d4cb13b0202b90181') in 0.018342 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_111.asset
-  artifactKey: Guid(545e192d6408c88498c60df8ab1cd403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_111.asset using Guid(545e192d6408c88498c60df8ab1cd403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a997f2c5620d1ad814dfefe842db15d') in 0.022012 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_128.asset
-  artifactKey: Guid(b3483de7087088448a74dcebeb590471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_128.asset using Guid(b3483de7087088448a74dcebeb590471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f532c96d220417818aae3a270c822ab') in 0.008350 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_105.asset
-  artifactKey: Guid(d53f093a8a8b2324a9f174eead101b5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_105.asset using Guid(d53f093a8a8b2324a9f174eead101b5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abbc3489a694e35b85818cf471112dc7') in 0.021166 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_120.asset
-  artifactKey: Guid(2db4f2947a8f48a4683dd915cf9a5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_120.asset using Guid(2db4f2947a8f48a4683dd915cf9a5ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baa6986501b24f41cceab87a4a55015d') in 0.020262 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_115.asset
-  artifactKey: Guid(f4415d74212bf384b9cb34c56b0d64d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_115.asset using Guid(f4415d74212bf384b9cb34c56b0d64d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd34d221d6b5d10d65181d30a54e2ab7a') in 0.021507 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_121.asset
-  artifactKey: Guid(ab388d1f93b36324fa78f96d631a96be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_121.asset using Guid(ab388d1f93b36324fa78f96d631a96be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9894b21dbf3b7bc83afcfe69aad108ac') in 0.010505 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_122.asset
-  artifactKey: Guid(0f7bf12817824d54bb2dca1edcd69739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_122.asset using Guid(0f7bf12817824d54bb2dca1edcd69739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9813088eb56796619b06990c1bbe7e16') in 0.020541 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_113.asset
-  artifactKey: Guid(888407c01834e834d93f0c06d7bb2097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_113.asset using Guid(888407c01834e834d93f0c06d7bb2097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '100833e9ffc6eead13f705e261d36d72') in 0.008451 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_110.asset
-  artifactKey: Guid(c97d47eea605459468354e9cea6de0ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_110.asset using Guid(c97d47eea605459468354e9cea6de0ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e711d37d61ef778a3687f6531211f39') in 0.021014 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_108.asset
-  artifactKey: Guid(f8f055ed4b5ff264c95a5b1092100874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_108.asset using Guid(f8f055ed4b5ff264c95a5b1092100874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af5942aac1afd4f0ea1215ae14a4d680') in 0.022341 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_118.asset
-  artifactKey: Guid(5cae2332d704fa24f9b2d2aecc715c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_118.asset using Guid(5cae2332d704fa24f9b2d2aecc715c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba6f1a5a13300a5467466dd9f87add93') in 0.021589 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_109.asset
-  artifactKey: Guid(2c9e5c97f3f2b02418792e977d5ce387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_109.asset using Guid(2c9e5c97f3f2b02418792e977d5ce387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93ef6fb28c8a7e8d5f8604a6076fb460') in 0.021688 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000106 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_97.asset
-  artifactKey: Guid(23eac26f5a3c14d4bb6a5eea3d8a6918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_97.asset using Guid(23eac26f5a3c14d4bb6a5eea3d8a6918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd9ee4b53cabb6462bac29003ca56cf3') in 0.022969 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_134.asset
-  artifactKey: Guid(9fbcd1bd66c538040ac85925b05d1101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_134.asset using Guid(9fbcd1bd66c538040ac85925b05d1101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6971d2764cc5e187e2e6d2ade66f40aa') in 0.020289 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_139.asset
-  artifactKey: Guid(231283e459abd724bb6524534047c780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_139.asset using Guid(231283e459abd724bb6524534047c780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70f6b9617c36ca344e6345c980eac2a3') in 0.020152 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_147.asset
-  artifactKey: Guid(019271ea67d616c428fc08fa029388e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_147.asset using Guid(019271ea67d616c428fc08fa029388e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af27f9efc2da2b35e33b0fbf70f2433a') in 0.008290 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_157.asset
-  artifactKey: Guid(d6f7bc2c813868e4c85dc657b5bc9a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_157.asset using Guid(d6f7bc2c813868e4c85dc657b5bc9a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7389ff0ac3aa8ab69c142b7c8e8dbb1e') in 0.017132 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_158.asset
-  artifactKey: Guid(b02c3d49e41914d45b3a26b1ead4880f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_158.asset using Guid(b02c3d49e41914d45b3a26b1ead4880f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36ff26346efe4a53b427fdf294b392d6') in 0.023582 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_146.asset
-  artifactKey: Guid(cb84dbd1e664ead4bba3e8ebf59d8b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_146.asset using Guid(cb84dbd1e664ead4bba3e8ebf59d8b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e63702aeaf2623ea333f16603ec25b0') in 0.021008 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_142.asset
-  artifactKey: Guid(c917921937bc8fb45825bbb37bb13e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_142.asset using Guid(c917921937bc8fb45825bbb37bb13e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '713e9ec162b9940713fac5ce4c7c941b') in 0.022043 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_155.asset
-  artifactKey: Guid(53bf1b0c34333954988b5c93f349610c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_155.asset using Guid(53bf1b0c34333954988b5c93f349610c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01a9f619d9673bf43697c97776b48a98') in 0.022607 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_161.asset
-  artifactKey: Guid(3e8dcf795277bad4084495e26b4d3e7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_161.asset using Guid(3e8dcf795277bad4084495e26b4d3e7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3327338ab9ff7379f6c6218a8af9be0f') in 0.018647 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_149.asset
-  artifactKey: Guid(3c9184b431b2bcd40835c1d424272f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_149.asset using Guid(3c9184b431b2bcd40835c1d424272f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c96505de6f53aaf4fa876f0a189836de') in 0.023558 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_164.asset
-  artifactKey: Guid(9a16bf59d10dafd4687283fac6d77f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_164.asset using Guid(9a16bf59d10dafd4687283fac6d77f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c36ed34ea40fe90be0a0580b1adee1f') in 0.021150 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_150.asset
-  artifactKey: Guid(b01f5484bfc7293408d00fdcb28b92be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_150.asset using Guid(b01f5484bfc7293408d00fdcb28b92be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9af49a10d1cf22d9887f777f0108296') in 0.018723 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_153.asset
-  artifactKey: Guid(da1b3dee245fc74469c348460b2b1e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_153.asset using Guid(da1b3dee245fc74469c348460b2b1e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '348889035728d3c7d071cc875711ee51') in 0.023346 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_135.asset
-  artifactKey: Guid(51765f0c8605b6a48a611d4fac29204a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_135.asset using Guid(51765f0c8605b6a48a611d4fac29204a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc55e67f1e38927f0772dd00538c9d5e') in 0.019323 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_127.asset
-  artifactKey: Guid(e05024428fbebfe49a74b6511abc4f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_127.asset using Guid(e05024428fbebfe49a74b6511abc4f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8468be59db7ebac9f27a7c8c9f87d451') in 0.021073 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_162.asset
-  artifactKey: Guid(b1503636839c707468fc93d3665285dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_162.asset using Guid(b1503636839c707468fc93d3665285dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57af251e00f1fd7193bc99ac8e1c5c92') in 0.020318 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_92.asset
-  artifactKey: Guid(875647010a6af81449912874947d8007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_92.asset using Guid(875647010a6af81449912874947d8007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bebea6160e6ca435a843790478c25b0c') in 0.010027 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_103.asset
-  artifactKey: Guid(9c0a3cafa02332440a045f3f94b3010f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_103.asset using Guid(9c0a3cafa02332440a045f3f94b3010f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e92a1f4d6d2f40116152212116ca2d7') in 0.021124 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_140.asset
-  artifactKey: Guid(d4fe244b1b5964e47a29aba1f42f6187) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_140.asset using Guid(d4fe244b1b5964e47a29aba1f42f6187) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e83d6bfc0dad99ee0f63bfe40270a13c') in 0.023987 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_130.asset
-  artifactKey: Guid(1314578adb4d2dd478088e3ce2c5989c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_130.asset using Guid(1314578adb4d2dd478088e3ce2c5989c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c2a77153d39ee57bcc90d7eab659afe') in 0.021102 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_101.asset
-  artifactKey: Guid(72f0168ac7f0d264cb2f8d55fffff0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_101.asset using Guid(72f0168ac7f0d264cb2f8d55fffff0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e40ad181960049ed0683ce252038394') in 0.010939 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Tilemaps/Tile asset/TX Tileset Ground_90.asset
-  artifactKey: Guid(c78a8d3ba70302440aa6e5801d6450db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Tile asset/TX Tileset Ground_90.asset using Guid(c78a8d3ba70302440aa6e5801d6450db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8da1694c7f6860c1ca147088590397f3') in 0.018177 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.966861 seconds.
-  path: Assets/Tilemaps/Palette/New Palette.prefab
-  artifactKey: Guid(cab70d403cbe01841a5e4785db3598df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tilemaps/Palette/New Palette.prefab using Guid(cab70d403cbe01841a5e4785db3598df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06a6b3599239cb4851edb26ead6c5b03') in 0.138728 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 341
-========================================================================
-Received Import Request.
-  Time since last request: 60.808329 seconds.
-  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Texture/TX Tileset Ground.png
-  artifactKey: Guid(157cbc340d2b7e64ab85168e80e95550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Texture/TX Tileset Ground.png using Guid(157cbc340d2b7e64ab85168e80e95550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3608abc06725eb8da4dc000fb142a4f5') in 0.610026 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 167
-========================================================================
-Received Import Request.
-  Time since last request: 83.987602 seconds.
-  path: Assets/2D Pixel Item Pack/Light Outline
-  artifactKey: Guid(656f9e31cc105bd4db1ada03b62147ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel Item Pack/Light Outline using Guid(656f9e31cc105bd4db1ada03b62147ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b83591e1fd94886d196de76896449d96') in 0.011120 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 17.846235 seconds.
-  path: Assets/2D Pixel Item Pack/Light Outline/S_ItemLightOutline_JarBlue_01.png
-  artifactKey: Guid(0290adc8f4725394d915c8e99c784df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel Item Pack/Light Outline/S_ItemLightOutline_JarBlue_01.png using Guid(0290adc8f4725394d915c8e99c784df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a86002668651bd9c0938c8db8bfac18') in 0.008121 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3

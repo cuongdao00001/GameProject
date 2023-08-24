@@ -15,13 +15,12 @@ public class SoundManager : MonoBehaviour
         Musicsource = transform.GetChild(0).GetComponent<AudioSource>();
 
         // Keep this object even when we go to new scene
-        if (instance != null )
+        if (instance != this )
         {
-            instance = this;
             DontDestroyOnLoad(gameObject);
         }
         // Destroy duplicate gameobjects
-        else if (instance != null && instance != this)
+        else 
         {
             Destroy(gameObject);
         }

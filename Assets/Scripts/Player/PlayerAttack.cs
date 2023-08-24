@@ -6,9 +6,12 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] private float attackCoolDown;
-    [SerializeField] private int damage;
+    [SerializeField] public int damage;
     [SerializeField] private float range;
     [SerializeField] private LayerMask enemyLayer;
+    private int originalDamage; // The original damage before applying the buff
+    private bool damageBuffActive = false;
+    private float damageBuffEndTime;
 
     [Header("Knockback")]
     [SerializeField] private float knockbackForce;
@@ -32,6 +35,11 @@ public class PlayerAttack : MonoBehaviour
             Attack();
 
         coolDownTimer += Time.deltaTime;
+
+        if (damageBuffActive && Time.time >= damageBuffEndTime)
+        {
+            RemoveDamageBuff(originalDamage);
+        }
     }
 
     private void Attack()
@@ -42,12 +50,14 @@ public class PlayerAttack : MonoBehaviour
         StartCoroutine(EnableMovementAfterAttack()); // Kích hoạt lại di chuyển sau khi tấn công hoàn thành
         coolDownTimer = 0;
     }
+
     private IEnumerator EnableMovementAfterAttack()
     {
         yield return new WaitForSeconds(1.1f); // Đợi cho đến khi animation attack hoàn thành (thời gian của animation attack)
 
         playerMove.EnableMovement(); // Kích hoạt lại di chuyển của player
     }
+
     public void DamageEnemy()
     {
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, range, enemyLayer);
@@ -72,10 +82,24 @@ public class PlayerAttack : MonoBehaviour
         enemyRigidbody.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
     }
 
-
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
     }
+
+    public void ApplyDamageBuff(int damageIncreaseAmount, float duration)
+    {
+        damageBuffActive = true;
+        originalDamage = damage; // Store the original damage
+        damage += damageIncreaseAmount; // Apply the buff
+        damageBuffEndTime = Time.time + duration;
+    }
+
+    public void RemoveDamageBuff(int previousDamage)
+    {
+        damageBuffActive = false;
+        damage = previousDamage; // Restore the original damage
+    }
+
 }
